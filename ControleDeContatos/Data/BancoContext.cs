@@ -14,6 +14,5 @@ namespace ControleDeContatos.Data
 
         public DbSet<ContatoModel> Contatos { get; set; }
 
-        //teste teste teste
     }
 }
