@@ -6,7 +6,6 @@ namespace ControleDeContatos.Controllers
 {
     public class ContatoController : Controller
     {
-        public readonly IContatoRepositorio contatoRepositorio;
 
         private readonly IContatoRepositorio _contatoRepositorio;
 
@@ -19,7 +18,7 @@ namespace ControleDeContatos.Controllers
         public IActionResult Index()
         {
             List<ContatoModel> contatos = _contatoRepositorio.BuscarTodos();
-            return View();
+            return View(contatos);
         }
 
         public IActionResult Criar()
