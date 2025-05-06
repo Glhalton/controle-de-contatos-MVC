@@ -20,7 +20,7 @@ namespace ControleDeContatos.Repositorio
         //Criação da consulta dos contatos, vai retorna uma lista de Contatos da tabela Contatos.
         public List<ContatoModel> BuscarTodos()
         {
-            //LINQ para retornar uma lista do banco de dados
+            //Comando LINQ para retornar uma lista do banco de dados
             return _bancoContext.Contatos.ToList();
         }
 
